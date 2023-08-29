@@ -1,16 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap');
 * {
     margin: 0;
     padding: 0;
     outline: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 
 /* common shared styles */
 #banner,
-#feature {
+#feature,
+#offer,
+.hot-deal-content {
     width: 80%;
     margin: 0 auto;
 }
@@ -22,7 +23,7 @@
 }
 
 p {
-    color: rgba(39, 39, 39, 0.60);
+    color: rgba(20, 20, 20, 0.6);
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
@@ -31,7 +32,7 @@ p {
 
 .btn {
     padding: 10px 30px;
-    background-color: #E55473;
+    background-color: #eb2a54;
     color: white;
     border: 0;
     cursor: pointer;
@@ -50,7 +51,7 @@ p {
 
 /* header section */
 header {
-    background-color: #FDEEF1;
+    background-color: #f3d9de;
 }
 
 
@@ -74,7 +75,7 @@ header {
 
 .banner-text h1 {
     color: #272727;
-    font-size: 55px;
+    font-size: 50px;
     font-weight: 800;
 }
 
@@ -139,4 +140,63 @@ header {
 
 .flower-three {
     background-color: #E4ECDC;
+}
+
+/* offer section styles */
+#offer {
+    padding: 60px 0;
+    background-color: #F4F4F4;
+    margin-top: 80px;
+    border-radius: 5px;
+}
+
+.offer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.offer {
+    width: 31%;
+}
+
+.offer-content img {
+    display: inline-block;
+    width: 70px;
+}
+
+.offer-content h3 {
+    color: rgba(39, 39, 39, 0.80);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 35px;
+    margin-top: 12px;
+}
+
+
+/* hot deal section styles */
+#hot-deal {
+    background-color: #f3d9de;
+    margin-top: 80px;
+}
+
+.hot-deal-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 60px 0;
+}
+
+.hot-deal-text,
+.hot-deal-image {
+    width: 50%;
+}
+
+.hot-deal-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.spesial-text {
+    color: #E55473;
 }
